@@ -13,6 +13,7 @@
     "esbuild": "^0.14.19"
   },
   "dependencies": {
+    "firebase": "^9.15.0",
     "gl-matrix": "^3.4.3"
   }
 }

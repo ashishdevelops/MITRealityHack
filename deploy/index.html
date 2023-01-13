@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <link rel="preload" href="mindar-image-tracking-bundle.js?t=2023-01-13T14:02:08.816" as="script">
-    <title>mindar-image-tracking</title>
+    <link rel="preload" href="MyWonderland-bundle.js?t=2023-01-13T17:54:22.755" as="script">
+    <title>MyWonderland</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="white">
@@ -92,7 +92,7 @@
         };
     </script>
     
-    <script src="wonderland.min.js?t=2023-01-13T14:02:08.816"></script>
+    <script src="wonderland.min.js?t=2023-01-13T17:54:22.755"></script>
     <script type="module">
         function loadScript(scriptURL) {
             return new Promise((res, rej) => {
@@ -117,10 +117,10 @@
                     if(el) setTimeout(() => el.remove(), 2000);
                 })
 
-                const bundle = await loadScript("mindar-image-tracking-bundle.js?t=2023-01-13T14:02:08.816");
+                const bundle = await loadScript("MyWonderland-bundle.js?t=2023-01-13T17:54:22.755");
                 bundle.id = 'bundle';
 
-                WL.scene.load('mindar-image-tracking.bin');
+                WL.scene.load('MyWonderland.bin');
             } catch(e) {
               console.error(e);
             }

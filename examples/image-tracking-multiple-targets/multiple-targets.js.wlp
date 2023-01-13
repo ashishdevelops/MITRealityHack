@@ -1,0 +1,595 @@
+{
+    "objects": {
+        "17": {
+            "name": "ARCamera",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "image-tracking",
+                    "image-tracking": {
+                        "videoPane": "18",
+                        "mindPath": "./targets.mind",
+                        "maxTrack": 1
+                    }
+                }
+            ]
+        },
+        "18": {
+            "name": "VideoPlane",
+            "parent": "17",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "p0",
+                        "material": "DefaultFontMaterial"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "TrackingTarget0",
+            "parent": "17",
+            "components": [
+                {
+                    "type": "image-tracking-target",
+                    "active": true,
+                    "image-tracking-target": {
+                        "tracker": "17",
+                        "arCamera": "17"
+                    }
+                }
+            ]
+        },
+        "28": {
+            "link": {
+                "name": "RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "19"
+        },
+        "29": {
+            "link": {
+                "name": "RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "28",
+            "transformation": [
+                1.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.5,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                1.0
+            ]
+        },
+        "30": {
+            "link": {
+                "name": "1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "29"
+        },
+        "31": {
+            "link": {
+                "name": "RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "30"
+        },
+        "32": {
+            "link": {
+                "name": "Group18985<RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "31"
+        },
+        "33": {
+            "link": {
+                "name": "Group18985_default_0<Group18985<RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "32"
+        },
+        "34": {
+            "link": {
+                "name": "Box002<RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "31"
+        },
+        "35": {
+            "link": {
+                "name": "Box002_default_0<Box002<RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "34"
+        },
+        "36": {
+            "link": {
+                "name": "Object001<RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "31"
+        },
+        "37": {
+            "link": {
+                "name": "Object001_default_0<Object001<RootNode<1.FBX<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "parent": "36"
+        },
+        "39": {
+            "name": "TrackingTarget1",
+            "parent": "17",
+            "components": [
+                {
+                    "type": "image-tracking-target",
+                    "image-tracking-target": {
+                        "targetIndex": 1,
+                        "arCamera": "17"
+                    },
+                    "active": true
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "44": {
+            "link": {
+                "name": "RootNode (gltf orientation matrix)",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "parent": "39"
+        },
+        "45": {
+            "link": {
+                "name": "RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "parent": "44"
+        },
+        "46": {
+            "link": {
+                "name": "67866a058a114411946d32e91de9150f.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "parent": "45"
+        },
+        "47": {
+            "link": {
+                "name": "RootNode<67866a058a114411946d32e91de9150f.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "parent": "46",
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "48": {
+            "link": {
+                "name": "Dino<RootNode<67866a058a114411946d32e91de9150f.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "parent": "47"
+        },
+        "49": {
+            "link": {
+                "name": "Dino_Dino_0<Dino<RootNode<67866a058a114411946d32e91de9150f.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "parent": "48",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
+        },
+        "54": {
+            "name": "Light.004",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "type": "sun",
+                        "attenuation": 0.0000099
+                    }
+                }
+            ],
+            "parent": "17",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "p0": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "p1": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "p2": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "p3": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "p4": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "p5": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "25": {
+            "link": {
+                "name": "Group18985_default_0",
+                "file": "assets\\shiba\\scene.gltf"
+            }
+        },
+        "26": {
+            "link": {
+                "name": "Box002_default_0",
+                "file": "assets\\shiba\\scene.gltf"
+            }
+        },
+        "27": {
+            "link": {
+                "name": "Object001_default_0",
+                "file": "assets\\shiba\\scene.gltf"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Dino_Dino_0",
+                "file": "assets\\dinosaur\\scene.gltf"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultTexture",
+                "file": "default"
+            }
+        },
+        "23": {
+            "link": {
+                "name": "texture_0",
+                "file": "assets\\shiba\\scene.gltf"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "texture_0",
+                "file": "assets\\dinosaur\\scene.gltf"
+            }
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultImage",
+                "file": "default"
+            }
+        },
+        "22": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\shiba\\scene.gltf"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\dinosaur\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "pipeline": "6"
+        },
+        "21": {
+            "name": "material"
+        },
+        "24": {
+            "link": {
+                "name": "default",
+                "file": "assets\\shiba\\scene.gltf"
+            },
+            "pipeline": "6"
+        },
+        "42": {
+            "link": {
+                "name": "Dino",
+                "file": "assets\\dinosaur\\scene.gltf"
+            },
+            "pipeline": "6"
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "2": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "multiple-targets",
+            "version": [
+                0,
+                9,
+                3
+            ],
+            "customIndexHtml": false
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js"
+            ]
+        },
+        "vr": {
+            "enable": false
+        }
+    },
+    "files": [
+        "assets/shiba/scene.gltf",
+        "assets/dinosaur/scene.gltf"
+    ]
+}
